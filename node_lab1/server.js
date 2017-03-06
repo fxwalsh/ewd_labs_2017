@@ -9,7 +9,6 @@ var server = http.createServer((req, res) => {
   res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end(greeting[language]||greeting["en"]);
 });
-
 // Listen on port 8000, IP defaults to 127.0.0.1
 server.listen(config.port);
 
